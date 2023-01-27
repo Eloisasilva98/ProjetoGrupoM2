@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+h1, h2, h4 {
+    color: rgb(253, 194, 48) !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900 !important;
+
+}

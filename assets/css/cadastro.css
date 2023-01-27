@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+h1, h2, h4 {
+    color: rgb(253, 194, 48) !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900 !important;
+
+}
+
+
+
+form {
+    background-color: rgb(86, 20, 125);
+    border-radius: 5vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+    
+
+}
+
+form *{
+    background-color: rgba(86, 20, 125, 0);
+    
+}
+
+form label{
+    color: white
+
+}
+form div{
+    margin-top: 12px;
+}
+
+.tend{
+
+    margin-top: 100px;
+}
+
+.check label{
+
+    font-weight: 900;
+}
+
+.enviar{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+
