@@ -1,11 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+html{
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 0.5vw;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(86, 20, 125);
+    border-radius: 10px;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     outline: 0;
-
+    background-color: rgb(23, 13, 48);
+    font-family: 'Montserrat', sans-serif;
 }
+<<<<<<< HEAD
 html, body{
     width: 100%;
     height: 100%;
 }
+=======
+
+#logo{
+    width: 250px;
+}
+
+header{
+    padding-left: 0.5%;
+}
+
+footer{
+    font-weight: 900;
+    color: rgb(253, 194, 48)
+}
+
+.caixasHeader{
+    width: 33%;
+}
+
+.nav-link{
+    font-weight: 900 !important;
+    list-style: none;
+    color: rgb(253, 194, 48) !important;
+}
+
+button{
+    border-radius: 10vh !important;
+}
+
+.btn{
+    background-color: rgb(253, 194, 48) !important;
+    font-weight: 900 !important;
+    border-radius: 10vh !important;
+}
+
+.btn-login{
+    width: 100px;
+}
+>>>>>>> 17fcbed11bfb7e1c77ae43226df0c837e2dbea9e
