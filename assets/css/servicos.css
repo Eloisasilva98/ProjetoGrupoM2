@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+h1, h2, h4 {
+    color: rgb(253, 194, 48) !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900 !important;
+}
+h3{
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Roboto', sans-serif ;
+    font-size: 30px;
+    font-weight: 900 !important;
+    background-color: rgb(87, 20, 125);
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+ul{
+    background-color: rgb(87, 20, 125);
+}
+
+li{
+    list-style: none;
+    color:rgb(255, 255, 255);
+    background-color: rgb(87, 20, 125);
+}
+i{
+    background-color: rgb(87, 20, 125);
+}
+p{
+    color: rgb(255, 255, 255);
+}
+
+.textH3{
+    margin-top: 5%;
+}
+
+.text{
+    margin-top: 10%;
+}
+
+.textConfig{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.caixaPlanos{
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.planosConfig{
+    width: 370px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(87, 20, 125);
+    border-radius: 10vh;
+}
+
+.planosConfig:hover{
+transform: scale(1.1);
+}
+
+.textStyle{
+    background-color: rgb(87, 20, 125);
+}
+
+.listConfig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10%;
+    width: 300px;
+    height: 340px;
+    background-color: rgb(87, 20, 125);
+}
+
+.specification{
+    text-align: center;
+    color: rgb(253, 194, 48);
+    background-color: rgb(87, 20, 125);
+}
+
+.bibi-dot, .bibi-check, .bibi-x{
+    color:rgb(255, 255, 255);
+    background-color: rgb(87, 20, 125);
+}
+
+.button{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(87, 20, 125);
+}
