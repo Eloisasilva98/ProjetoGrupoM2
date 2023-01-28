@@ -1,8 +1,9 @@
-$("form").on("submit", (e) => {
+$(".enviar").on("click", (e) => {
     e.preventDefault();
+    
 });
 
-$("#btn").on('input'), () => {
+$("#cep").on(''), () => {
     {
         let cep = $("#cep").val()
 
@@ -12,7 +13,8 @@ $("#btn").on('input'), () => {
             url: "https://viacep.com.br/ws/${cep}/json/",
             dataType: "json",
             success: function (response) {
-                
+                $("#rua").val(response.logradouro)
+
                 
             }
         });
