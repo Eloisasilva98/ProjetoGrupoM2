@@ -1,17 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+html{
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 0.5vw;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(86, 20, 125);
+    border-radius: 10px;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     outline: 0;
+    background-color: rgb(23, 13, 48);
+    font-family: 'Montserrat', sans-serif;
+}
+#logo{
+    width: 250px;
 }
 
-html body{
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background: rgb(45, 6, 73); 
+header{
+    padding-left: 0.5%;
 }
+
+footer{
+    font-weight: 900;
+    color: rgb(253, 194, 48)
+}
+
+.caixasHeader{
+    width: 33%;
+}
+
+.nav-link{
+    font-weight: 900 !important;
+    list-style: none;
+    color: rgb(253, 194, 48) !important;
+}
+
+button{
+    border-radius: 10vh !important;
+   
+}
+a:link{
+    text-decoration: none;
+    content: none;
+}
+
+#btnLogin
+.btn
+{
+    background-color: rgb(253, 194, 48) !important;
+    font-weight: 900 !important;
+    border-radius: 10vh !important;
+}
+
+.btn-login{
+    width: 100px;
+}
+.button{
+    width: 100px;
+    display: flex;
+    /* justify-content: center; */
+    background-color: rgb(87, 20, 125);
+}
+
+.btn-outline-warning{
+    display: flex;
+}
+
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+} 
+
 .container{
     display: flex;
     width: 100%;
@@ -37,7 +108,7 @@ span{
 h2{
     display: flex;
     margin-top: 70px;
-    color: rgb(229, 229, 7);
+    color: rgb(253, 194, 48) !important;
 }
 .textoInicio
 p{
@@ -46,7 +117,7 @@ p{
 }
 #img1{
     display: flex;
-    margin-top: 60px;
+    margin-top: 40px;
     width: 320px;
     height: 280px;
     align-items: flex-end;
@@ -55,20 +126,23 @@ p{
     display: flex;
     width: 100%;
     margin-top: 10px;
-    /* border: 2px solid white; */
+    /* border: 2px solid white;  */
     height: 300px;
 }
 .textoInicio button{
     margin-left: 90px;
     margin-top: 60px;
 }
-button{
-       display: flex;
-       width: 200px;
+#button1{
+    text-decoration: none;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    background-color:rgb(253, 194, 48) ;
 }
-   .textoInicio p{
-       display: flex;
-       margin-top: 20px;
+.textoInicio p{
+    display: flex;
+    margin-top: 20px;
 }
 .textoInicio{
     display: flex;
@@ -78,7 +152,7 @@ button{
 .imagem1{
 
     width: 0%;
-    padding-left: 80px;
+    padding-left: 30px;
 }
 
 
@@ -90,7 +164,7 @@ button{
     width: 100%;
 }
 .vantagens{
-    color:rgb(186, 186, 17) ;
+    color:rgb(253, 194, 48) !important;
     justify-content: center;
     margin-left: 78px;
     display: grid;
@@ -107,7 +181,7 @@ button{
 #titulo2{
   display: flex;
     justify-content: center;
-    color:rgb(229, 229, 7) ;
+    color:rgb(253, 194, 48) !important ;
     margin-top: 90px;
 }
 
@@ -116,34 +190,36 @@ button{
 .missao{
     display: flex;
     border-radius: 20px;
-    background: rgb(62, 8, 84);
-    /* border: 2px solid white; */
+    background-color: rgb(62, 8, 84) ;
+    /* border: 2px solid white;  */
     flex-direction: column;
-    height: 580px;
-    width: 900px;
+    height: 640px;
+    width: 800px;
     padding: 40px;
     margin-top: 40px;
    
 }
 .missao p{
-    color:white;
+    color:white !important;
+    background-color: rgb(62, 8, 84);
 }
 .missao h5{
-    color:rgb(239, 239, 23);
+    color:rgb(253, 194, 48) !important;
+    background-color: rgb(62, 8, 84);
 
 }
 .missao h3{
     text-align: center;
-    color:rgb(253, 253, 15);
+    color:rgb(253, 194, 48) !important;
+    background-color: rgb(62, 8, 84);
 }
 .secao3{
     display: flex;
 }
 #img2{
+
     display: flex;
-    /* border: 2px solid white; */
     align-items: flex-end;
-    justify-content: end;
     margin-top: 40px;
     width: 500px;
 
