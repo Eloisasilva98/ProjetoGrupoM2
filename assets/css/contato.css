@@ -1,0 +1,65 @@
+/* Configurações Desktop */
+h1{
+    color: rgb(253, 194, 48) !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900 !important;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.caixaEquipe{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.configPessoa{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.configImgPessoa{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    
+}
+
+.nome{
+    margin-top: 10%;
+    color:rgb(253, 194, 48) !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.iconesContatos{
+    height: 80px;
+}
+
+.configImgLink{
+    width: 35px;
+    height: 35px;
+}
+
+.configImgGit{
+    width: 35px;
+    height: 35px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+}
+
+
+
+@media screen and (max-width: 769px){
+    
+}
