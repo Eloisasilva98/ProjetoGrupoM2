@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+.divlogoSlogan, .divformulario{
+    height: 87.4vh;
+    width: 50vw;
+}
+
+.inputLogin{
+    width: 80%;
+    height: 35%;
+    background-color: rgb(87, 20, 125);
+}
+
+.inputLogin label{
+    font-size: 200%;
+    font-weight: 900 !important;
+    color: white;
+    background-color: rgb(87, 20, 125);
+}
+
+.inputLogin input{
+    text-align: center;
+    font-size: 200%;
+    border-radius: 5vh;
+    height: 65px;
+    background-color: white;
+}
+
+#imglogoSlogan{
+    width: 600px;
+}
+
+#formLogin{
+    width: 35vw;
+    height: 70vh;
+    background-color: rgb(87, 20, 125);
+    border-radius: 5vh;
+}
+
+#divHeaderFormLogin, #divConteudoFormLogin, #divfooterFormLogin{
+    width: 90% ;
+    background-color: rgb(87, 20, 125);
+}
+
+#divHeaderFormLogin{
+    height: 10vh;
+    background-color: rgb(87, 20, 125);
+    
+}
+
+#divHeaderFormLogin span{
+    color: rgb(253, 194, 48);
+    background-color: rgb(87, 20, 125);
+    font-size: 350%;
+    font-weight: 900;
+}
+
+#divConteudoFormLogin{
+    height: 47vh;
+}
+
+#divfooterFormLogin{
+    width: 80% ;
+    height: 10vh;
+}
+
+#divBtnEntrar, #divBtnEntrar a {
+    background-color: rgb(87, 20, 125);
+}
+
+#divBtnEntrar a{
+    color: rgb(79, 195, 195);
+    font-size: 110%;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-Entrar{
+    font-size: 150%;
+    font-weight: 900;
+    color: rgb(23, 13, 48);
+    width: 150px;
+    height: 50px;
+}
+
+#esqueceuSenha, #esqueceuSenha a {
+    color: rgb(23, 13, 48);
+    font-weight: 900;
+    background-color: rgb(87, 20, 125);
+}
+
+#esqueceuSenha a{
+    color: rgb(79, 195, 195);
+    text-decoration: none;
+    
+}
+
+
