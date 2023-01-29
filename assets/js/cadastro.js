@@ -1,4 +1,4 @@
-const regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i
+
 
 
 
@@ -16,12 +16,12 @@ $("#pessoaf").change(() => {
 
 // funçao de verificar se o nome esta vazio e se é menor que 3 characteres
 $('#nomeCompleto').on('blur', () => {
-    const nome = $('#nomeCompleto').val().length
-    
+    const nome = $('#nomeCompleto').val().trim()
+    const regexNome =/^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/
     
     if (nome == '') {
         
-        $('#nomeAp').text('o campo esta vazio') 
+        $('#nomeAp').text('O campo nome esta vazio') 
         $('#nomeAp').css({ 'color': 'red' })
     }
 
@@ -29,10 +29,15 @@ $('#nomeCompleto').on('blur', () => {
         $('#nomeAp').text('Por Favor Coloque Seu Nome Completo') 
         $('#nomeAp').css({ 'color': 'red' })
     }
+    else if (!regexNome.test(nome)) {
+        $('#nomeAp').text('Por Favor Use Somente Letras') 
+        $('#nomeAp').css({ 'color': 'red' })
+        }
 
     else {
         $('#nomeAp').text('Ok') 
         $('#nomeAp').css({ 'color': 'green' })
+        return true
     }
 
 })
@@ -54,14 +59,73 @@ $('#documento').on('blur', () => {
     }
 
     else {
-        $('#docAp').text('Ok') 
+        $('#docAp').text('OK') 
         $('#docAp').css({ 'color': 'green' })
+        
+        return true
+    }
+
+})
+
+// validaçao de email
+
+$('#email').on('blur', () => {
+    const email = $('#email').val().trim()
+    const regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i
+
+    if (regexEmail.test(email)) {
+        $('#emailAp').text('OK') 
+        $('#emailAp').css({ 'color': 'green' })
+        return true
+        
+    }
+    else {
+        $('#emailAp').text('coloque um email valido por favor') 
+        $('#emailAp').css({ 'color': 'red' })
     }
 
 })
 
 
+// validaçao de senha
+$('#senha').on('blur', () => {
+   const senha = $('#senha').val()
+    
+    
+    if (senha.length < 8) {
 
+        $('#apSenha').text('Minimo 8 Digitos') 
+        $('#apSenha').css({ 'color': 'red' })
+
+    
+    }
+    else {
+        $('#apSenha').text('OK') 
+        $('#apSenha').css({ 'color': 'green' })
+    }
+
+})  
+
+// validaçao de confirmaçao de senha
+$('#cSenha').on('blur', () => {
+    
+    const csenha = $('#cSenha').val()
+    const senha = $('#senha').val()
+
+    if (csenha === senha) {
+        $('#apCsenha').text('OK') 
+        $('#apCsenha').css({ 'color': 'green' })
+        
+    }
+    else {
+        $('#apCsenha').text('senhas nao conferem') 
+        $('#apCsenha').css({ 'color': 'red' })
+
+    }
+
+
+
+})
 
 
 
@@ -106,3 +170,7 @@ $(".enviar").on("click", (e) => {
     alert('cadastro enviado com sucesso');
     
 });
+
+
+
+
