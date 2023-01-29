@@ -151,10 +151,14 @@ $("#cep").on('blur', () => {
                 $("#cidade").val(response.localidade);
                 $("#estado").val(response.uf); 
                 $("#aparecer").text('ok')
+                $('#aparecer').css({ 'color': 'green' })
+        
+                
                 
             },
             error: function (response) {
-             $('#aparecer').text('Não Encontrei Seu cep')  
+                $('#aparecer').text('Não Encontrei Seu cep')
+                $('#aparecer').css({ 'color': 'red' })   
             },
             
         });
