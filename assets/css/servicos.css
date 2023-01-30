@@ -19,7 +19,7 @@ h4{
 }
 
 ul{
-    background-color: rgb(87, 20, 125);
+    background-color: rgba(86, 20, 125, 0);
 }
 
 li{
@@ -85,7 +85,7 @@ transform: scale(1.1);
     margin-right: 10%;
     width: 300px;
     height: 340px;
-    background-color: rgb(87, 20, 125);
+    background-color: rgba(86, 20, 125, 0);
 }
 
 .specification{
