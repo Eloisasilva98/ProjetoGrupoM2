@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japu Sites</title>
     <link rel="stylesheet" href="./css/main.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/cadastro.css">
@@ -19,28 +18,38 @@
 
     <header class="d-flex align-items-center justify-content-between">
         <div class="caixasHeader">
-
-            <img src="./img/image.png" alt="logo" id="logo">
-        </div>
-
-        <div class="caixasHeader d-flex justify-content-center" id="links">
-            <ul class="nav">
-                <li><a href="/index.html" class="nav-link ">SOBRE NÓS</a></li>
-                <li><a href="./servicos.html" class="nav-link ">SERVIÇOS</a></li>
-                <li><a href="./contato.html" class="nav-link ">CONTATOS</a></li>
-            </ul>
-        </div>
-        <div class="caixasHeader d-flex justify-content-end" id="btnLogin">
-            <button type="button" class="btn btn-login me-2">Login</button>
-        </div>
+         <img src="./img/image.png" alt="logo" id="logo">
+      </div>
+   
+     <div class="caixasHeader d-flex justify-content-center" id="links">   
+         <ul class="nav">
+           <li><a href="/index.html" class="nav-link ">SOBRE NÓS</a></li>
+           <li><a href="./servicos.html" class="nav-link ">SERVIÇOS</a></li>
+           <li><a href="./contato.html" class="nav-link ">CONTATOS</a></li>
+           
+         </ul>
+     </div>  
+         <div class="caixasHeader d-flex justify-content-end" id="btnLogin">
+            <img id="iconMenuMobile" src="img/nav-icon.svg" alt="">
+            <a href="login.html"><button type="button" class="btn btn-login me-2" >Login</button></a>
+         </div>
     </header>
+    <!-- Menu Mobile -->
+    <div id="headerMobile">   
+        <ul class="navMobile">
+            <li><a href="/index.html" class="nav-linkMobile">SOBRE NÓS</a></li>
+            <li><a href="./servicos.html" class="nav-linkMobile">SERVIÇOS</a></li>
+            <li><a href="./contato.html" class="nav-linkMobile">CONTATOS</a></li>
+            <a href="/assets/login.html" class=""><button type="button" class="btn btn-login-mobile" >Login</button></a>
+        </ul>
+    </div>
 
     <main>
         <div class="container d-flex align-items-center flex-column">
 
             <h1>Cadastre-se</h1>
 
-            <form class="d-flex flex-column w-50 align-items-center">
+            <form class="cxForm d-flex flex-column w-50 align-items-center">
                 <div class="check d-flex justify-content-between w-50 ">
 
                     <div class="form-check">
@@ -56,25 +65,25 @@
                         </label>
                       </div>
                 </div>
-                <div class="d-flex flex-column w-75">
+                <div class="formulario d-flex flex-column w-75">
                     <label for="inputName4" class="form-label">Nome Completo</label>
                     <input type="text" placeholder="digite seu nome" class="form-control" id="nomeCompleto">
                     <span id="nomeAp"></span>
                 </div>
 
-                <div class="d-flex flex-column w-75">
+                <div class="formulario d-flex flex-column w-75">
                     <label id="campText">RG</label>
                     <input type="text" maxlength="9" id="documento"placeholder="Digite somente numeros" class="form-control
                     ">
                     <span id="docAp"></span>
                 </div>
 
-                <div class="d-flex flex-column w-75">
+                <div class="formulario d-flex flex-column w-75">
                     <label for="inputEmail4" class="form-label">E-mail</label>
                     <input type="email" placeholder="digite seu melhor e-mail" class="form-control" id="email">
                     <span id="emailAp"></span>
                 </div>
-                <div class=" d-flex w-75 justify-content-between">
+                <div class="formulario d-flex w-75 justify-content-between">
                     <div>
                         <label for="inputPassword4" class="form-label">Senha</label>
                         <input type="password" placeholder="digite sua senha" class="form-control" id="senha">
@@ -88,7 +97,7 @@
                     </div>
                 </div>
 
-                <div class="tend d-flex w-75 justify-content-center ">
+                <div class="d-flex w-75 justify-content-center ">
                     <h4>Seu Endereço</h4>
                 </div>
                 <div class="w-75">
@@ -97,7 +106,7 @@
                         placeholder="digite seu cep">
                         <span id="aparecer"></span>
                 </div>
-                <div class=" d-flex w-75 justify-content-between">
+                <div class="formulario d-flex w-75 justify-content-between">
                     <div class="">
                         <label for="inputAddress2" class="form-label">logradouro</label>
                         <input type="text" class="form-control" id="rua">
@@ -110,7 +119,7 @@
 
                 </div>
 
-                <div class=" d-flex w-75 justify-content-between">
+                <div class="formulario d-flex w-75 justify-content-between">
 
                     <div class="">
                         <label for="inputAddress" class="form-label">Complemento</label>
@@ -124,7 +133,7 @@
 
                 </div>
 
-                <div class=" d-flex w-75 justify-content-between">
+                <div class="formulario d-flex w-75 justify-content-between">
 
                     <div class="">
                         <label for="inputCity" class="form-label">Cidade</label>
@@ -151,7 +160,7 @@
 
 
     <footer class="d-flex justify-content-center">Todos os direitos reservados © 2023 FRONTENDERS</footer>
-
+    <script src="/assets/js/main.js"></script>
     <script src="/assets/js/cadastro.js"></script>
 </body>
 
