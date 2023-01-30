@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+.divlogoSlogan, .divformulario{
+    height: 87.4vh;
+    width: 50vw;
+}
+
+#imglogoSlogan{
+    width: 30vw;
+    height: 30vh;
+}
+
+.divlogoSlogan, .divformulario{
+    height: 87.4vh;
+    width: 50vw;
+}
+
+.inputLogin{
+    width: 80%;
+    height: 35%;
+    background-color: rgb(87, 20, 125);
+}
+
+.inputLogin label{
+    font-size: 200%;
+    font-weight: 900 !important;
+    color: white;
+    background-color: rgb(87, 20, 125);
+}
+
+
+#imglogoSlogan{
+    width: 600px;
+}
+
+#formLogin{
+    width: 35vw;
+    height: 70vh;
+    background-color: rgb(87, 20, 125);
+    border-radius: 5vh;
+}
+
+#formLogin *{
+    background-color: rgb(87, 20, 125);
+}
+
+
+.inputLogin input{
+    text-align: center;
+    font-size: 200%;
+    border-radius: 5vh;
+    height: 65px;
+    background-color: white !important;
+}
+
+#divHeaderFormLogin, #divConteudoFormLogin, #divfooterFormLogin{
+    width: 90% ;
+}
+
+#divHeaderFormLogin{
+    height: 10vh;
+}
+
+#divHeaderFormLogin span{
+    color: rgb(253, 194, 48);
+    background-color: rgb(87, 20, 125);
+    font-size: 350%;
+    font-weight: 900;
+}
+
+#divConteudoFormLogin{
+    height: 47vh;
+}
+
+#divfooterFormLogin{
+    width: 80% ;
+    height: 10vh;
+}
+
+.btn-Entrar{
+    font-size: 150%;
+    font-weight: 900;
+    color: rgb(23, 13, 48);
+    width: 150px;
+    height: 50px;
+}
+
+.divSpanRsenha{
+    width: 80%;
+    color: white;
+   text-align: center;
+   font-size: 140%;
+}
+
+
+
+
+
+
+
+#exampleModal, #exampleModal1{
+    background-color:  rgba(21, 7, 45, 0.616);
+} 
+
+.modal-dialog{
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 20vh;
+    max-width: 40%;
+    
+}
+
+.modal-content{
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(87, 20, 125);
+
+}
+
+.modal-content *{
+    background-color: rgb(87, 20, 125);
+}
+
+.modal-content .modal-body{
+    color: rgb(255, 255, 255);
+}
+
+.modal-header h1 {
+    color: rgb(253, 194, 48);
+    font-size: 5.5vh !important;
+    font-weight: 900;
+}
+
+.modal-header, .modal-footer, .modal-body{
+    width: 80% !important;
+    border: none;
+}
+
+#conteudo-modal1{
+    height: 25vh;
+    margin-top: 250px;
+}
+
+#conteudo-modal1 .modal-body{
+    color: rgb(253, 194, 48);
+    font-size: 3.5vh;
+    height: 10px;
+    font-weight: 800;
+}
+
+.btn-cancelar{
+    font-size: 2vh;
+    width: 5vw;
+    height: 4vh;
+    background-color: rgb(179, 179, 179) !important;
+}
+
+.btn-cancelar:hover{
+    background-color: rgb(231, 231, 231) !important;
+}
+
+.btn-salvar{
+    font-size: 2vh;
+    width: 6vw;
+    height: 5vh;
+}
+
+.btn-salvar:hover{
+    background-color: rgb(255, 227, 114) !important;
+}
+
+.btn-ok{
+    width: 5vw;
+}
+
+.modal-body{
+    align-items: center;
+    justify-content: space-around;
+    height: 40vh;
+}
+
+.modal-body label{
+    font-weight: 700;
+}
+
+.modal-body input{
+    background-color: white;
+    height: 4.5vh;
+    border-radius: 2vh;
+    border: none;
+    text-align: center;
+    font-size: 2.5vh;
+
+}
+
+.divSenha{
+    justify-content: space-between;
+    width: 25vw;
+    height: 15vh;
+}
+
+.divSenha input{
+    width: 25vw;
+}
+
+.divCodigo{
+    width: 25vw;
+}
+.divCodigo input{
+    width: 15vw;
+}
+

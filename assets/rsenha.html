@@ -5,21 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japu Sites</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/rsenha.css">
+    
 </head>
 <body>
+  <header class="d-flex align-items-center justify-content-between">
+    <div class="caixasHeader">
+     <img src="./img/image.png" alt="logo" id="logo">
+  </div>
 
-    <header></header>
+ <div class="caixasHeader d-flex justify-content-center" id="links">   
+     <ul class="nav">
+       <li><a href="/index.html" class="nav-link ">SOBRE NÓS</a></li>
+       <li><a href="./servicos.html" class="nav-link ">SERVIÇOS</a></li>
+       <li><a href="./contato.html" class="nav-link ">CONTATOS</a></li>
+       
+     </ul>
+ </div>  
+     <div class="caixasHeader d-flex justify-content-end" id="btnLogin">
+        <img id="iconMenuMobile" src="img/nav-icon.svg" alt="">
+        <a href="login.html"><button type="button" class="btn btn-login me-2" >Login</button></a>
+     </div>
+</header>
+
+<div id="headerMobile">   
+    <ul class="navMobile">
+        <li><a href="/index.html" class="nav-linkMobile">SOBRE NÓS</a></li>
+        <li><a href="./servicos.html" class="nav-linkMobile">SERVIÇOS</a></li>
+        <li><a href="./contato.html" class="nav-linkMobile">CONTATOS</a></li>
+        <a href="login.html" class=""><button type="button" class="btn btn-login-mobile" >Login</button></a>
+    </ul>
+</div>
+
+    <main class="d-flex">
+        <div class="divlogoSlogan d-flex align-items-center justify-content-center">
+            <img id="imglogoSlogan" src="img/logoSlogan.png" alt="Slogan">
+        </div>
+        <div class="divformulario d-flex align-items-center justify-content-center">
+            <form id="formLogin" action="" class="d-flex flex-column justify-content-center align-items-center">
+                <div id="divHeaderFormLogin" class="d-flex justify-content-center">
+                    <span class="justify-self-start">Recuperar Senha</span>
+                </div>
+                <div id="divConteudoFormLogin" class="d-flex flex-column justify-content-evenly align-items-center">
+                    <div class="divSpanRsenha d-flex flex-column">
+                        <span>Informe seu e-mail cadastrado para que possamos te enviar o código de validação</span>
+                    </div>
+                    <div class="inputLogin d-flex flex-column">
+                        <label for="">E-mail</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div id="divfooterFormLogin" class="d-flex justify-content-end">
+                    <div id="divBtnEntrar" class="d-flex align-items-center justify-content-between">
+                        <button type="button" class="btn btn-Entrar " data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
 
+        <!-- Modal Recuperar Senha -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" >
+            <div class="modal-dialog">
+              <div class="modal-content" id="conteudo-modal">
+                <div class="modal-header d-flex justify-content-center">
+                  <h1 class="modal-title fs-5" id="">Alterar senha</h1>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div class="divCodigo d-flex flex-column ">
+                        <label for="codigoValidacao">Código de Validação</label>
+                        <input id='codigoValidacao' type="text" placeholder="Ex: 12345">
+                    </div>
+                    <div class="divSenha d-flex flex-column">
+                        <div>
+                            <label for="codigoValidacao">Nova Senha</label>
+                            <input type="password" placeholder="Ex: Senha@123">
+                        </div>
+                        <div>
+                            <label for="codigoValidacao">Confirmação de Senha</label>
+                            <input type="password" placeholder="Ex: Senha@123">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex align-items-end">
+                  <button type="button" class="btn btn-cancelar" data-bs-dismiss="modal">Cacelar</button>
+                  <button type="button" class="btn btn-salvar" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal1">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content" id="conteudo-modal1">
+                <div class="modal-body d-flex flex-column">
+                    <span>Senha Alterada com sucesso!</span>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-ok" data-bs-dismiss="modal">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
 
-    <main></main>
+    <footer class="d-flex justify-content-center">Todos os direitos reservados © 2023 FRONTENDERS</footer>
 
-
-
-    <footer></footer>
-
-    <script src="./assets/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body> 
 </html>

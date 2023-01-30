@@ -59,26 +59,32 @@
                 <div class="d-flex flex-column w-75">
                     <label for="inputName4" class="form-label">Nome Completo</label>
                     <input type="text" placeholder="digite seu nome" class="form-control" id="nomeCompleto">
+                    <span id="nomeAp"></span>
                 </div>
 
                 <div class="d-flex flex-column w-75">
-                    <label>RG</label>
-                    <input type="text" maxlength="9" placeholder="11.111.111-1" class="form-control">
+                    <label id="campText">RG</label>
+                    <input type="text" maxlength="9" id="documento"placeholder="Digite somente numeros" class="form-control
+                    ">
+                    <span id="docAp"></span>
                 </div>
 
                 <div class="d-flex flex-column w-75">
                     <label for="inputEmail4" class="form-label">E-mail</label>
-                    <input type="email" placeholder="digite seu melhor e-mail" class="form-control" id="inputEmail4">
+                    <input type="email" placeholder="digite seu melhor e-mail" class="form-control" id="email">
+                    <span id="emailAp"></span>
                 </div>
                 <div class=" d-flex w-75 justify-content-between">
                     <div>
                         <label for="inputPassword4" class="form-label">Senha</label>
-                        <input type="password" placeholder="digite sua senha" class="form-control" id="inputPassword4">
+                        <input type="password" placeholder="digite sua senha" class="form-control" id="senha">
+                        <span id="apSenha"></span>
                     </div>
                     <div>
                         <label for="inputPassword4" class="form-label">Confirme sua Senha</label>
                         <input type="password" placeholder="confirme sua senha" class="form-control"
-                            id="inputPassword4">
+                            id="cSenha">
+                            <span id="apCsenha"></span>
                     </div>
                 </div>
 
@@ -89,6 +95,7 @@
                     <label for="inputAddress" class="form-label">CEP</label>
                     <input type="number" maxlength="8" class="form-control" id="cep"
                         placeholder="digite seu cep">
+                        <span id="aparecer"></span>
                 </div>
                 <div class=" d-flex w-75 justify-content-between">
                     <div class="">
@@ -112,7 +119,7 @@
 
                     <div class="">
                         <label for="inputCity" class="form-label">Bairro</label>
-                        <input type="text" class="form-control" id="inputCity" readonly>
+                        <input type="text" class="form-control" id="bairro" readonly>
                     </div>
 
                 </div>
@@ -121,12 +128,12 @@
 
                     <div class="">
                         <label for="inputCity" class="form-label">Cidade</label>
-                        <input type="text" class="form-control" id="inputCity" readonly>
+                        <input type="text" class="form-control" id="cidade" readonly>
                     </div>
 
                     <div class="">
                         <label for="inputState" class="form-label">Estado</label>
-                        <input type="text" class="form-control" readonly>
+                        <input type="text" class="form-control" id="estado" readonly>
 
                     </div>
 
