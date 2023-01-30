@@ -235,7 +235,7 @@ p{
 
 }
 #img3{
-    display: flex;
+    
     background:rgb(62, 8, 84) ;
     visibility:hidden;
 }
@@ -277,7 +277,7 @@ p{
     .textoInicio{
         display: flex;
         flex-direction: column;
-        overflow-wrap: break-word;
+        /* overflow-wrap: break-word; */
         align-items: center;
         /* border: 2px solid white; */
     }
@@ -292,10 +292,12 @@ p{
     }
     #img1{
         /* width: 170px; */
-        visibility:hidden;
+    
+        display: none;
     }
     #img2{
-        visibility:hidden;
+        
+       display: none;
     }
     #img3{
         visibility: visible;
@@ -331,7 +333,6 @@ p{
         align-items: flex-end;
         justify-content: end;
         justify-items: end;
-        margin-bottom: 0px;
         height: 300px;
     
     }
@@ -341,20 +342,16 @@ p{
         font-size: 15px;
     } */
     .textoInicio button{
-        margin-left: 0px;
         margin-top: 20px;
     }
     .secao3{
         display: flex;
         justify-items: center;
-        padding-top: 0px;
-        padding-left: 24px;
+    
+    
  
-
-
-    }
-
-
-
-
+    }    
 }
+
+
+
