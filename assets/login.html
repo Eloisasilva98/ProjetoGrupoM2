@@ -5,21 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japu Sites</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    
 </head>
 <body>
+    <header class="d-flex align-items-center justify-content-between">
+        <div class="caixasHeader">
+         <img src="./img/image.png" alt="logo" id="logo">
+      </div>
+   
+     <div class="caixasHeader d-flex justify-content-center" id="links">   
+         <ul class="nav">
+           <li><a href="/index.html" class="nav-link ">SOBRE NÓS</a></li>
+           <li><a href="./servicos.html" class="nav-link ">SERVIÇOS</a></li>
+           <li><a href="./contato.html" class="nav-link ">CONTATOS</a></li>
+           
+         </ul>
+     </div>  
+         <div class="caixasHeader d-flex justify-content-end" id="btnLogin">
+            <img id="iconMenuMobile" src="img/nav-icon.svg" alt="">
+            <a href="login.html"><button type="button" class="btn btn-login me-2" >Login</button></a>
+         </div>
+    </header>
+    <!-- Menu Mobile -->
+    <div id="headerMobile">   
+        <ul class="navMobile">
+            <li><a href="/index.html" class="nav-linkMobile">SOBRE NÓS</a></li>
+            <li><a href="./servicos.html" class="nav-linkMobile">SERVIÇOS</a></li>
+            <li><a href="./contato.html" class="nav-linkMobile">CONTATOS</a></li>
+            <a href="login.html" class=""><button type="button" class="btn btn-login-mobile" >Login</button></a>
+        </ul>
+    </div>
 
-    <header></header>
+       
 
 
+    <main class="d-flex">
+        <div class="divlogoSlogan d-flex align-items-center justify-content-center">
+            <img id="imglogoSlogan" src="img/logoSlogan.png" alt="Slogan">
+        </div>
+        <div class="divformulario d-flex align-items-center justify-content-center">
+            <form id="formLogin" action="" class="d-flex flex-column justify-content-center align-items-center">
+                <div id="divHeaderFormLogin" class="d-flex justify-content-center">
+                    <span class="justify-self-start">Login</span>
+                </div>
+                <div id="divConteudoFormLogin" class="d-flex flex-column justify-content-center align-items-center">
+                    <div class="inputLogin d-flex flex-column">
+                        <label for="">E-mail</label>
+                        <input type="text">
+                    </div>
+                    <div class="inputLogin d-flex flex-column">
+                        <label for="">Senha</label>
+                        <input type="password">
+                        <span id="esqueceuSenha">Esqueceu sua senha? <a href="rsenha.html">recupere-a aqui</a></span>
+                    </div>
+                </div>
+                <div id="divfooterFormLogin" class="d-flex justify-content-end">
+                    <div id="divBtnEntrar" class="d-flex flex-column align-items-center justify-content-between">
+                        <button type="button" class="btn btn-Entrar">Entrar</button>
+                        <a href="cadastro.html">Cadastrar-se</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
 
-    <main></main>
+    <footer class="d-flex justify-content-center">Todos os direitos reservados © 2023 FRONTENDERS</footer>
 
-
-
-    <footer></footer>
-
-    <script src="./assets/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body> 
 </html>
