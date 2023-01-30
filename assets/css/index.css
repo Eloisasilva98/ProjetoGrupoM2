@@ -128,15 +128,15 @@ p{
 #img1{
     display: flex;
     margin-top: 40px;
-    width: 480px;
-    height: 300px;
+    width: 360px;
+    height: 270px;
     align-items: flex-end;
 } 
 .secao1{
     display: flex;
     width: 100%;
     margin-top: 10px;
-    /* border: 2px solid white;  */
+    /* border: 2px solid white;   */
     height: 300px;
 }
 .textoInicio button{
@@ -206,7 +206,7 @@ p{
     height: 640px;
     width: 800px;
     padding: 40px;
-    margin-top: 40px;
+    margin-top: 70px;
    
 }
 .missao p{
@@ -244,8 +244,15 @@ p{
 @media (max-width:1024px) {
     .vantagens{
     color:rgb(253, 194, 48) !important;
-    justify-content: center;
-    margin-left: 78px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 90px;
+    display: flex;
+    margin-top: 20px;
+
+   
+  
+    margin-left: 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* Define o número total de colunas que serão criadas no grid. */
@@ -253,7 +260,7 @@ p{
     /* Define a quantidade de linhas no grid */
     grid-gap: 6px 50px;
     /* Define o gap (espaçamento) entre os elementos do grid. */
-    padding: 20px 0px;
+    padding: 0px 0px;
     /* border: 1px solid black; */
     }
     #titulo2{
@@ -271,7 +278,7 @@ p{
         display: flex;
         flex-direction: column;
         overflow-wrap: break-word;
-        /* align-items: center; */
+        align-items: center;
         /* border: 2px solid white; */
     }
     .textoInicio button{
@@ -279,11 +286,13 @@ p{
         margin-top: 30px;
     }
     .missao{
+        width: 600px;
         display: flex;
         height: 1080px;
     }
     #img1{
-        width: 170px;
+        /* width: 170px; */
+        visibility:hidden;
     }
     #img2{
         visibility:hidden;
@@ -291,6 +300,61 @@ p{
     #img3{
         visibility: visible;
     }
+    .missao p{
+        color:white !important;
+        background-color: rgb(62, 8, 84);
+    }
+    .missao h5{
+        color:rgb(253, 194, 48) !important;
+        background-color: rgb(62, 8, 84);
+        font-size: 20px;
+    
+    }
+    .missao h3{
+        text-align: center;
+        color:rgb(253, 194, 48) !important;
+        background-color: rgb(62, 8, 84);
+        font-size: 25px;
+    }
+    .secao1{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+     
+    }
+    footer{
+        display: flex;
+        font-weight: 900;
+        color: rgb(253, 194, 48);
+        align-items: flex-end;
+        justify-content: end;
+        justify-items: end;
+        margin-bottom: 0px;
+        height: 300px;
+    
+    }
+    /* footer{
+        padding-top: 0px;
+        display: flex;
+        font-size: 15px;
+    } */
+    .textoInicio button{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .secao3{
+        display: flex;
+        justify-items: center;
+        padding-top: 0px;
+        padding-left: 24px;
+ 
+
+
+    }
+
+
 
 
 }
