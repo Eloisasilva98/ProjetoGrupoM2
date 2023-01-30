@@ -27,11 +27,19 @@ html{
 
 header{
     padding-left: 0.5%;
+ 
 }
 
 footer{
+    display: flex;
     font-weight: 900;
-    color: rgb(253, 194, 48)
+    color: rgb(253, 194, 48);
+    align-items: flex-end;
+    justify-content: end;
+    justify-items: end;
+    margin-bottom: 0px;
+    height: 300px;
+
 }
 
 .caixasHeader{
@@ -42,15 +50,17 @@ footer{
     font-weight: 900 !important;
     list-style: none;
     color: rgb(253, 194, 48) !important;
+ 
 }
 
 button{
     border-radius: 10vh !important;
    
 }
+
+
 a:link{
     text-decoration: none;
-    content: none;
 }
 
 #btnLogin
@@ -118,8 +128,8 @@ p{
 #img1{
     display: flex;
     margin-top: 40px;
-    width: 320px;
-    height: 280px;
+    width: 480px;
+    height: 300px;
     align-items: flex-end;
 } 
 .secao1{
@@ -222,5 +232,65 @@ p{
     align-items: flex-end;
     margin-top: 40px;
     width: 500px;
+
+}
+#img3{
+    display: flex;
+    background:rgb(62, 8, 84) ;
+    visibility:hidden;
+}
+
+/* ============ Responsividade =========== */
+@media (max-width:1024px) {
+    .vantagens{
+    color:rgb(253, 194, 48) !important;
+    justify-content: center;
+    margin-left: 78px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Define o número total de colunas que serão criadas no grid. */
+    grid-template-rows: 25px;
+    /* Define a quantidade de linhas no grid */
+    grid-gap: 6px 50px;
+    /* Define o gap (espaçamento) entre os elementos do grid. */
+    padding: 20px 0px;
+    /* border: 1px solid black; */
+    }
+    #titulo2{
+    display: flex;
+    justify-content: center;
+    color:rgb(253, 194, 48) !important ;
+    margin-top: 90px;
+    }
+    #img1 {
+        /* visibility:hidden; */
+        width: 200px;
+        height: 150px;
+    }
+    .textoInicio{
+        display: flex;
+        flex-direction: column;
+        overflow-wrap: break-word;
+        /* align-items: center; */
+        /* border: 2px solid white; */
+    }
+    .textoInicio button{
+        margin-left: 90px;
+        margin-top: 30px;
+    }
+    .missao{
+        display: flex;
+        height: 1080px;
+    }
+    #img1{
+        width: 170px;
+    }
+    #img2{
+        visibility:hidden;
+    }
+    #img3{
+        visibility: visible;
+    }
+
 
 }
