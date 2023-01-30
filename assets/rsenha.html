@@ -13,22 +13,34 @@
     
 </head>
 <body>
-    <header class="d-flex align-items-center justify-content-between">
-        <div class="caixasHeader">
-         <img src="./img/image.png" alt="logo" id="logo">
-      </div>
-   
-     <div class="caixasHeader d-flex justify-content-center" id="links">   
-         <ul class="nav">
-           <li><a href="/index.html" class="nav-link ">SOBRE NÓS</a></li>
-           <li><a href="./servicos.html" class="nav-link ">SERVIÇOS</a></li>
-           <li><a href="./contato.html" class="nav-link ">CONTATOS</a></li>
-         </ul>
-     </div>  
-         <div class="caixasHeader d-flex justify-content-end" id="btnLogin">
-           <a href="login.html"><button type="button" class="btn btn-login me-2">Login</button></a>
-         </div>
-       </header>
+  <header class="d-flex align-items-center justify-content-between">
+    <div class="caixasHeader">
+     <img src="./img/image.png" alt="logo" id="logo">
+  </div>
+
+ <div class="caixasHeader d-flex justify-content-center" id="links">   
+     <ul class="nav">
+       <li><a href="/index.html" class="nav-link ">SOBRE NÓS</a></li>
+       <li><a href="./servicos.html" class="nav-link ">SERVIÇOS</a></li>
+       <li><a href="./contato.html" class="nav-link ">CONTATOS</a></li>
+       
+     </ul>
+ </div>  
+     <div class="caixasHeader d-flex justify-content-end" id="btnLogin">
+        <img id="iconMenuMobile" src="img/nav-icon.svg" alt="">
+        <a href="login.html"><button type="button" class="btn btn-login me-2" >Login</button></a>
+     </div>
+</header>
+
+<div id="headerMobile">   
+    <ul class="navMobile">
+        <li><a href="/index.html" class="nav-linkMobile">SOBRE NÓS</a></li>
+        <li><a href="./servicos.html" class="nav-linkMobile">SERVIÇOS</a></li>
+        <li><a href="./contato.html" class="nav-linkMobile">CONTATOS</a></li>
+        <a href="login.html" class=""><button type="button" class="btn btn-login-mobile" >Login</button></a>
+    </ul>
+</div>
+
     <main class="d-flex">
         <div class="divlogoSlogan d-flex align-items-center justify-content-center">
             <img id="imglogoSlogan" src="img/logoSlogan.png" alt="Slogan">
@@ -103,6 +115,6 @@
 
     <footer class="d-flex justify-content-center">Todos os direitos reservados © 2023 FRONTENDERS</footer>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body> 
 </html>

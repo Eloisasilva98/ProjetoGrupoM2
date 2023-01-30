@@ -84,6 +84,7 @@
 }
 
 #esqueceuSenha, #esqueceuSenha a {
+    font-size: 1vw;
     color: rgb(23, 13, 48);
     font-weight: 900;
     background-color: rgb(87, 20, 125);

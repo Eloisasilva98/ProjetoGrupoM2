@@ -7,8 +7,9 @@
     <title>Japu Sites</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    
 </head>
 <body>
     <header class="d-flex align-items-center justify-content-between">
@@ -21,12 +22,27 @@
            <li><a href="/index.html" class="nav-link ">SOBRE NÓS</a></li>
            <li><a href="./servicos.html" class="nav-link ">SERVIÇOS</a></li>
            <li><a href="./contato.html" class="nav-link ">CONTATOS</a></li>
+           
          </ul>
      </div>  
          <div class="caixasHeader d-flex justify-content-end" id="btnLogin">
-            <a href="login.html"><button type="button" class="btn btn-login me-2">Login</button></a>
+            <img id="iconMenuMobile" src="img/nav-icon.svg" alt="">
+            <a href="login.html"><button type="button" class="btn btn-login me-2" >Login</button></a>
          </div>
-       </header>
+    </header>
+    <!-- Menu Mobile -->
+    <div id="headerMobile">   
+        <ul class="navMobile">
+            <li><a href="/index.html" class="nav-linkMobile">SOBRE NÓS</a></li>
+            <li><a href="./servicos.html" class="nav-linkMobile">SERVIÇOS</a></li>
+            <li><a href="./contato.html" class="nav-linkMobile">CONTATOS</a></li>
+            <a href="login.html" class=""><button type="button" class="btn btn-login-mobile" >Login</button></a>
+        </ul>
+    </div>
+
+       
+
+
     <main class="d-flex">
         <div class="divlogoSlogan d-flex align-items-center justify-content-center">
             <img id="imglogoSlogan" src="img/logoSlogan.png" alt="Slogan">
@@ -59,6 +75,6 @@
 
     <footer class="d-flex justify-content-center">Todos os direitos reservados © 2023 FRONTENDERS</footer>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body> 
 </html>
