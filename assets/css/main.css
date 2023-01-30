@@ -80,11 +80,6 @@ button{
 /*            //////////////////////////////////////// Menu Responsivo para vizualização Mobile //////////////////////////////////////       */
 @media screen and (max-width: 1024px) {
 
-    #esqueceuSenha, #esqueceuSenha a {
-        font-size: 2vw;
-       
-    }
-
     body{
         background-color: rgb(23, 13, 48);
     }
