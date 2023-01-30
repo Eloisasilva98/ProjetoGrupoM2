@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
 /* Configurações Desktop */
+
+body{
+    background-color: rgb(23, 13, 48);
+
+}
+
 h1{
     color: rgb(253, 194, 48) !important;
     font-family: 'Roboto', sans-serif;
     font-weight: 900 !important;
-    text-align: center;
-    padding-top: 4%;
+    margin-top: 4%;
 }
+
 
 .caixaEquipe{
     padding-top: 5%;
@@ -51,15 +59,4 @@ h1{
 .configImgGit{
     width: 35px;
     height: 35px;
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-
-
-}
-
-
-
-@media screen and (max-width: 769px){
-    
 }

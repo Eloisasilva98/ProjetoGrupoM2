@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Japu Sites</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/contato.css">
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -15,7 +16,6 @@
 </head>
 
 <body>
-
   <header class="d-flex align-items-center justify-content-between">
     <div class="caixasHeader">
       <img src="./img/image.png" alt="logo" id="logo">
@@ -26,59 +26,74 @@
         <li><a href="/index.html" class="nav-link ">SOBRE NÓS</a></li>
         <li><a href="./servicos.html" class="nav-link ">SERVIÇOS</a></li>
         <li><a href="./contato.html" class="nav-link ">CONTATOS</a></li>
+
       </ul>
     </div>
     <div class="caixasHeader d-flex justify-content-end" id="btnLogin">
+      <img id="iconMenuMobile" src="img/nav-icon.svg" alt="">
       <a href="login.html"><button type="button" class="btn btn-login me-2">Login</button></a>
     </div>
   </header>
+  <!-- Menu Mobile -->          
+  <div id="headerMobile">
+    <ul class="navMobile">
+      <li><a href="../index.html" class="nav-linkMobile">SOBRE NÓS</a></li>
+      <li><a href="./servicos.html" class="nav-linkMobile">SERVIÇOS</a></li>
+      <li><a href="./contato.html" class="nav-linkMobile">CONTATOS</a></li>
+      <a href="./login.html" class=""><button type="button" class="btn btn-login-mobile">Login</button></a>
+    </ul>
+  </div>
 
-
-
-  <main>
+  <div class="container d-flex flex-column align-items-center titulo">
     <h1>Nossa Equipe</h1>
-
+  </div>
   <div class="caixaEquipe">
     <div class="configPessoa">
       <img src="./img/img-contato/daniel.jfif" alt="foto Daniel" class="configImgPessoa">
       <p class="nome">Daniel Lisboa</p>
-     <div class="d-flex flex-column justify-content-between iconesContatos">
-      <a href="https://www.linkedin.com/in/daniel-lisboa-9b1a281aa/"><img src="./img/img-contato/linkedin.svg" alt="link Daniel"  class="configImgLink"></a>
-      <a href="https://github.com/DanielGLisboa"><img src="./img/img-contato/github.svg" alt="github Daniel" class="configImgGit"></a>
+      <div class="d-flex flex-column justify-content-between iconesContatos">
+        <a href="https://www.linkedin.com/in/daniel-lisboa-9b1a281aa/"><img src="./img/img-contato/linkedin.svg"
+            alt="link Daniel" class="configImgLink"></a>
+        <a href="https://github.com/DanielGLisboa"><img src="./img/img-contato/github.svg" alt="github Daniel"
+            class="configImgGit"></a>
+      </div>
     </div>
-  </div>
     <div class="configPessoa">
       <img src="./img/img-contato/eloisa.jfif" alt="foto Eloísa" class="configImgPessoa">
       <p class="nome">Eloísa Silva</p>
       <div class="d-flex flex-column justify-content-between iconesContatos">
-      <a href="https://www.linkedin.com/in/eloisa-silva-dev/"><img src="./img/img-contato/linkedin.png" alt="link Eloísa" class="configImgLink"></a>
-      <a href="https://github.com/Eloisasilva98"><img src="./img/img-contato/github.svg" alt="github Elísa" class="configImgGit"></a>
-    </div>
+        <a href="https://www.linkedin.com/in/eloisa-silva-dev/"><img src="./img/img-contato/linkedin.png"
+            alt="link Eloísa" class="configImgLink"></a>
+        <a href="https://github.com/Eloisasilva98"><img src="./img/img-contato/github.svg" alt="github Elísa"
+            class="configImgGit"></a>
+      </div>
     </div>
     <div class="configPessoa">
       <img src="./img/img-contato/gabriel.jpg" alt="foto Gabriel" class="configImgPessoa">
       <p class="nome">Gabriel Piovesani</p>
       <div class="d-flex flex-column justify-content-between iconesContatos">
-      <a href="https://www.linkedin.com/in/gabrielpiovesani/"><img src="./img/img-contato/linkedin.png" alt="link Gabriel" class="configImgLink"></a>
-      <a href="https://github.com/GabrielPiovesani"><img src="./img/img-contato/github.svg" alt="github Gabriel" class="configImgGit"></a>
-    </div>
+        <a href="https://www.linkedin.com/in/gabrielpiovesani/"><img src="./img/img-contato/linkedin.png"
+            alt="link Gabriel" class="configImgLink"></a>
+        <a href="https://github.com/GabrielPiovesani"><img src="./img/img-contato/github.svg" alt="github Gabriel"
+            class="configImgGit"></a>
+      </div>
     </div>
     <div class="configPessoa">
       <img src="./img/img-contato/ligia.jfif" alt="foto Lígia" class="configImgPessoa">
       <p class="nome">Lígia Baptista</p>
       <div class="d-flex flex-column justify-content-between iconesContatos">
-      <a href="https://www.linkedin.com/in/ligia-baptista-19a1a812a/"><img src="./img/img-contato/linkedin.png" alt="link Lígia" class="configImgLink"></a>
-      <a href="https://github.com/LigiaBaptista"><img src="./img/img-contato/github.svg" alt="github Lígia" class="configImgGit"></a>
-    </div>
+        <a href="https://www.linkedin.com/in/ligia-baptista-19a1a812a/"><img src="./img/img-contato/linkedin.png"
+            alt="link Lígia" class="configImgLink"></a>
+        <a href="https://github.com/LigiaBaptista"><img src="./img/img-contato/github.svg" alt="github Lígia"
+            class="configImgGit"></a>
+      </div>
     </div>
   </div>
   </main>
 
+  <footer class="d-flex justify-content-center">Todos os direitos reservados © 2023 FRONTENDERS</footer>
 
-
-  <footer class="d-flex justify-content-center ">Todos os direitos reservados © 2023 FRONTENDERS</footer>
-
-  <script src="./assets/js/main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
