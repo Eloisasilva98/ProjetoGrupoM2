@@ -51,3 +51,31 @@ form div{
 #aparecer{
     color: rgb(224, 7, 7);
 }
+@media screen and (max-width: 1400px){
+    .formulario {
+        flex-direction: column !important;
+    }
+    
+    .cxForm{
+        font-size: 13px !important;
+    }
+
+    
+}
+
+@media screen and (max-width: 980px){
+    .cxForm , .container {
+        width: 80% !important;
+        font-size: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px){
+    .cxForm , .container {
+        width: 95% !important;
+        font-size: 10px;
+    }
+
+}
