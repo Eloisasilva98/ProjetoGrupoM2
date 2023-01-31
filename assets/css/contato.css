@@ -1,8 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
-h1, h2, h4 {
+/* Configurações Desktop */
+
+body{
+    background-color: rgb(23, 13, 48);
+
+}
+
+h1{
     color: rgb(253, 194, 48) !important;
     font-family: 'Roboto', sans-serif;
     font-weight: 900 !important;
+    margin-top: 4%;
+}
 
+
+.caixaEquipe{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.configPessoa{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.configImgPessoa{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    
+}
+
+.nome{
+    margin-top: 10%;
+    color:rgb(253, 194, 48) !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.iconesContatos{
+    height: 80px;
+}
+
+.configImgLink{
+    width: 35px;
+    height: 35px;
+}
+
+.configImgGit{
+    width: 35px;
+    height: 35px;
 }
