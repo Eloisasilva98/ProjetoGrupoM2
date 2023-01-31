@@ -41,6 +41,11 @@ p{
     margin-top: 5%;
 }
 
+.description{
+    text-align: center;
+    font-size: 20px;
+}
+
 .text{
     margin-top: 10%;
 }
