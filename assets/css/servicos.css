@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
+/* Configurações dos textos */
 h1, h2, h4 {
     color: rgb(253, 194, 48) !important;
     font-family: 'Roboto', sans-serif;
@@ -19,7 +20,7 @@ h4{
 }
 
 ul{
-    background-color: rgb(87, 20, 125);
+    background-color: rgba(86, 20, 125, 0);
 }
 
 li{
@@ -27,15 +28,22 @@ li{
     color:rgb(255, 255, 255);
     background-color: rgb(87, 20, 125);
 }
+
 i{
     background-color: rgb(87, 20, 125);
 }
+
 p{
     color: rgb(255, 255, 255);
 }
 
 .textH3{
     margin-top: 5%;
+}
+
+.description{
+    text-align: center;
+    font-size: 20px;
 }
 
 .text{
@@ -50,6 +58,11 @@ p{
     margin-bottom: 4%;
 }
 
+.textStyle{
+    background-color: rgb(87, 20, 125);
+}
+
+/* Configurações das caixas de planos */
 .caixaPlanos{
     display: flex;
     flex-direction: row;
@@ -74,9 +87,7 @@ p{
 transform: scale(1.1);
 }
 
-.textStyle{
-    background-color: rgb(87, 20, 125);
-}
+
 
 .listConfig{
     display: flex;
@@ -85,7 +96,7 @@ transform: scale(1.1);
     margin-right: 10%;
     width: 300px;
     height: 340px;
-    background-color: rgb(87, 20, 125);
+    background-color: rgba(86, 20, 125, 0);
 }
 
 .specification{
@@ -109,6 +120,8 @@ transform: scale(1.1);
 .btnAssinar{
     background-color: rgb(87, 20, 125);;
 }
+
+/* Responsividade da Página */
 
 @media screen and (max-width: 768px) {
     .planosConfig{
