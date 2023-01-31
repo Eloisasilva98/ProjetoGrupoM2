@@ -84,7 +84,7 @@
 }
 
 #esqueceuSenha, #esqueceuSenha a {
-    font-size: 1vw;
+    font-size: 1.3vw;
     color: rgb(23, 13, 48);
     font-weight: 900;
     background-color: rgb(87, 20, 125);
@@ -97,3 +97,61 @@
 }
 
 
+@media screen and (max-width: 1024px) {
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .divlogoSlogan{
+        display: none !important;
+    }
+
+    #formLogin{
+        width: 90vw;
+        height: 60vh;
+        background-color: rgb(87, 20, 125);
+        border-radius: 5vh;
+    }
+
+    #divHeaderFormLogin span{
+        font-size: 250%;
+    }
+    
+    #divConteudoFormLogin{
+        height: 35vh;
+    }
+
+    .inputLogin{
+        width: 80%;
+        height: 35%;
+    }
+
+    .inputLogin label{
+        font-size: 110%;
+    }
+    
+    .inputLogin input{
+        font-size: 150%;
+        height: 5vh;
+    }
+    
+    #esqueceuSenha, #esqueceuSenha a {
+        font-size: 2.7vw;
+    }
+
+    #divBtnEntrar a{
+        color: rgb(79, 195, 195);
+        font-size: 60%;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    
+
+    .btn-Entrar{
+        font-size: 100%;
+        width: 90px;
+        height: 40px;
+    }
+
+}
