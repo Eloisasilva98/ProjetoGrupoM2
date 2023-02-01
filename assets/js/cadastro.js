@@ -10,7 +10,6 @@ var regexDocumento = /(^\d{2})(\d{3})(\d{3})(\d{1}|X|x$)/
 
 // tirando o autocomplete do imput para nao ficar mostrando sugestoes para o usuario
 $('input').attr('autocomplete', 'off')
-$('input').attr('required', 'true')
 // quando selecionado pessoa fisica parece o campo rg e quando selecionado pessoa juridica aparece cnpj
 $("#pessoaf").change(() => {
     $("#campText").text("RG");
@@ -160,11 +159,7 @@ $('#cSenha').on('input',  ()=>{
 
 
 
-
-
-
-
-// consutal a api via cep e inclusao dos valores da api no formulario do site
+// consuta a api via cep e inclusao dos valores da api no formulario do site
 $("#cep").on('blur', () => {
    
     
@@ -202,13 +197,37 @@ $('form').on('submit', (e) => {
 })
 
 
-function enviarForm() {
-if (nomeok && documentook && senhaok && csenhaok && documentook && cepok){
-    alert('nomeok')
-    
+function validaForm() {
+if (nomeok && emailok && documentook && senhaok && csenhaok && documentook && cepok){
+    $('#spanModal').text('Cadastro realizado com sucesso! ')
+    $('#linkBtnModal').attr('href', '../index.html')
 }
 else {
-    alert('esta errado')
+    $('#spanModal').text('Um ou mais campos não foram preenchidos corretamente')
+    if(nomeok == false){
+        $('#nomeAp').text('* Campo inválido') 
+        $('#nomeAp').css({ 'color': 'red' })
+    }
+    if(documentook == false){
+        $('#docAp').text('* Campo inválido') 
+        $('#docAp').css({ 'color': 'red' })
+    }
+    if(emailok == false){
+        $('#emailAp').text('* Campo inválido') 
+        $('#emailAp').css({ 'color': 'red' })
+    }
+    if(senhaok == false){
+        $('#apSenha').text('* Campo inválido') 
+        $('#apSenha').css({ 'color': 'red' })
+    }
+    if(csenhaok == false){
+        $('#apCsenha').text('* Campo inválido') 
+        $('#apCsenha').css({ 'color': 'red' })
+    }
+    if(cepok === false){
+        $('#aparecer').text('* Campo inválido')
+                $('#aparecer').css({ 'color': 'red' }) 
+    }
 }
 }
 
