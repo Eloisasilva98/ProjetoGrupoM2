@@ -35,8 +35,6 @@ footer{
     font-weight: 900;
     color: rgb(253, 194, 48);
     align-items: flex-end;
-    justify-content: end;
-    justify-items: end;
     margin-bottom: 0px;
     height: 300px;
 
@@ -77,7 +75,6 @@ a:link{
 .button{
     width: 100px;
     display: flex;
-    /* justify-content: center; */
     background-color: rgb(87, 20, 125);
 }
 
@@ -118,6 +115,7 @@ span{
 h2{
     display: flex;
     margin-top: 70px;
+    font-weight: 900;
     color: rgb(253, 194, 48) !important;
 }
 .textoInicio
@@ -135,13 +133,11 @@ p{
 .secao1{
     display: flex;
     width: 100%;
-    margin-top: 10px;
-    /* border: 2px solid white;   */
+    margin-top: 0px;
     height: 300px;
 }
 .textoInicio button{
-    margin-left: 90px;
-    margin-top: 60px;
+    margin-top: 10px;
 }
 #button1{
     text-decoration: none;
@@ -157,7 +153,6 @@ p{
 .textoInicio{
     display: flex;
     flex-direction: column;
-    /* border: 2px solid white; */
 }
 .imagem1{
 
@@ -170,7 +165,6 @@ p{
 /* =============== section do meio da main ========================== */
 .vantagens{
     display: flex;
-    /* border: 2px solid white;  */
     width: 100%;
 }
 .vantagens{
@@ -180,7 +174,7 @@ p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* Define o número total de colunas que serão criadas no grid. */
-    grid-template-rows: 70px;
+    grid-template-rows: 50px;
     /* Define a quantidade de linhas no grid */
     grid-gap: 6px 80px;
     /* Define o gap (espaçamento) entre os elementos do grid. */
@@ -201,7 +195,6 @@ p{
     display: flex;
     border-radius: 20px;
     background-color: rgb(62, 8, 84) ;
-    /* border: 2px solid white;  */
     flex-direction: column;
     height: 640px;
     width: 800px;
@@ -214,6 +207,7 @@ p{
     background-color: rgb(62, 8, 84);
 }
 .missao h5{
+    font-weight: 800;
     color:rgb(253, 194, 48) !important;
     background-color: rgb(62, 8, 84);
 
@@ -222,6 +216,9 @@ p{
     text-align: center;
     color:rgb(253, 194, 48) !important;
     background-color: rgb(62, 8, 84);
+}
+h3{
+    font-weight: 900;
 }
 .secao3{
     display: flex;
@@ -235,7 +232,6 @@ p{
 
 }
 #img3{
-    
     background:rgb(62, 8, 84) ;
     visibility:hidden;
 }
@@ -243,17 +239,7 @@ p{
 /* ============ Responsividade =========== */
 @media (max-width:1024px) {
     .vantagens{
-    color:rgb(253, 194, 48) !important;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 90px;
-    display: flex;
     margin-top: 20px;
-
-   
-  
-    margin-left: 0px;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* Define o número total de colunas que serão criadas no grid. */
     grid-template-rows: 25px;
@@ -270,28 +256,19 @@ p{
     margin-top: 90px;
     }
     #img1 {
-        /* visibility:hidden; */
         width: 200px;
         height: 150px;
     }
     .textoInicio{
-        display: flex;
         flex-direction: column;
-        /* overflow-wrap: break-word; */
         align-items: center;
-        /* border: 2px solid white; */
     }
-    .textoInicio button{
-        margin-left: 90px;
-        margin-top: 30px;
-    }
+
     .missao{
         width: 600px;
-        display: flex;
-        height: 1080px;
+        height: 1000px;
     }
     #img1{
-        /* width: 170px; */
     
         display: none;
     }
@@ -300,56 +277,21 @@ p{
        display: none;
     }
     #img3{
+        display: flex;
         visibility: visible;
     }
-    .missao p{
-        color:white !important;
-        background-color: rgb(62, 8, 84);
-    }
     .missao h5{
-        color:rgb(253, 194, 48) !important;
-        background-color: rgb(62, 8, 84);
         font-size: 20px;
-    
     }
     .missao h3{
-        text-align: center;
-        color:rgb(253, 194, 48) !important;
-        background-color: rgb(62, 8, 84);
         font-size: 25px;
     }
     .secao1{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
         text-align: center;
      
     }
-    footer{
-        display: flex;
-        font-weight: 900;
-        color: rgb(253, 194, 48);
-        align-items: flex-end;
-        justify-content: end;
-        justify-items: end;
-        height: 300px;
-    
-    }
-    /* footer{
-        padding-top: 0px;
-        display: flex;
-        font-size: 15px;
-    } */
-    .textoInicio button{
-        margin-top: 20px;
-    }
     .secao3{
-        display: flex;
         justify-items: center;
-    
-    
- 
     }    
 }
 
