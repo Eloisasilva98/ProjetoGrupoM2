@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
-html{
+html {
     overflow-y: scroll;
 }
 
@@ -75,6 +75,10 @@ button{
     display: none;
 }
 
+footer{
+    position: absolute;
+    width: 100%;
+}
 
 /*            //////////////////////////////////////// Menu Responsivo para vizualização Mobile //////////////////////////////////////       */
 @media screen and (max-width: 1024px) {
@@ -172,4 +176,16 @@ button{
         justify-content: center !important;
     }
     
+    footer{
+        font-size: 70%;
+    }
+   
+}
+
+@media screen and (max-width: 768px){
+
+    footer{
+        font-size: 60%;
+    }
+        
 }
