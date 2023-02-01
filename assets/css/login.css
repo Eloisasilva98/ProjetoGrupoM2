@@ -108,6 +108,10 @@
         height: 60%;
     }
 
+    .inputLogin{
+        height: auto;
+    }
+
     #divHeaderFormLogin span{
         font-size: 300%;
     }
@@ -115,7 +119,6 @@
     .btn-Entrar{
         font-size: 100%;
         width: 120px;
-        height: 30px;
     }
 }
 
