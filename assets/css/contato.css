@@ -3,12 +3,12 @@
 /* Configurações Desktop */
 
 body{
-    background-color: rgb(23, 13, 48);
+    background-color: #170d30;
 
 }
 
 h1{
-    color: rgb(253, 194, 48) !important;
+    color: #fdc230 !important;
     font-family: 'Roboto', sans-serif;
     font-weight: 900 !important;
     margin-top: 4%;

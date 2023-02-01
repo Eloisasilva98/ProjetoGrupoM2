@@ -16,6 +16,19 @@
 
 <body>
 
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" id="conteudo-modal1">
+            <div class="modal-body d-flex flex-column">
+                <span>Senha Alterada com sucesso!</span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-ok" data-bs-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <header class="d-flex align-items-center justify-content-between">
         <div class="caixasHeader">
          <img src="./img/image.png" alt="logo" id="logo">
@@ -67,14 +80,14 @@
                 </div>
                 <div class="formulario d-flex flex-column w-75">
                     <label for="inputName4" class="form-label">Nome Completo</label>
-                    <input type="text" placeholder="digite seu nome" class="form-control" id="nomeCompleto">
+                    <input type="text" placeholder="digite seu nome" class="form-control"  id="nomeCompleto">
                     <span id="nomeAp"></span>
                 </div>
 
                 <div class="formulario d-flex flex-column w-75">
                     <label id="campText">RG</label>
-                    <input type="text" maxlength="9" id="documento"placeholder="Digite somente numeros" class="form-control
-                    ">
+                    <input type="text" id="documento"placeholder="Digite somente numeros" class="form-control
+                    "  >
                     <span id="docAp"></span>
                 </div>
 
@@ -103,7 +116,7 @@
                 <div class="w-75">
                     <label for="inputAddress" class="form-label">CEP</label>
                     <input type="number" maxlength="8" class="form-control" id="cep"
-                        placeholder="digite seu cep">
+                        placeholder="digite seu cep" >
                         <span id="aparecer"></span>
                 </div>
                 <div class="formulario d-flex w-75 justify-content-between">
@@ -150,7 +163,7 @@
 
 
                 <div class="enviar w-75">
-                    <button type="submit" class="btn" id="enviar">Enviar</button>
+                    <button type="submit" class="btn" id="enviar" onclick="enviarForm()">Enviar</button>
                 </div>
             </form>
 
