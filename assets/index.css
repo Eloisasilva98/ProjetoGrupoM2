@@ -195,6 +195,7 @@ p{
     display: flex;
     border-radius: 20px;
     background-color: rgb(62, 8, 84) ;
+    /* border: 2px solid white;  */
     flex-direction: column;
     height: 640px;
     width: 800px;
