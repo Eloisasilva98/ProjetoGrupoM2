@@ -79,3 +79,99 @@ form div{
     }
 
 }
+
+
+
+/* ///////////////////////////////////////// Estilização modal ////////////////////////////////////////*/
+#modalCadastro{
+    background-color:  rgba(21, 7, 45, 0.616);
+} 
+
+.modal-dialog{
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 20vh;
+    max-width: 50%;
+    
+}
+
+.modal-content{
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(87, 20, 125);
+
+}
+
+#conteudo-modalCadastro{
+    height: 25vh;
+    margin-top: 250px;
+}
+
+.modal-content *{
+    background-color: rgb(87, 20, 125);
+}
+
+#conteudo-modalCadastro .modal-body{
+   
+    color: rgb(253, 194, 48);
+    font-size: 3vh;
+    width: 95%;
+    height: 10px;
+    font-weight: 800;
+}
+
+
+.modal-content .modal-body{
+    color: rgb(255, 255, 255);
+}
+
+.modal-footer{
+    width: 80%;
+    border: none;
+}
+
+.modal-body{
+    align-items: center;
+    justify-content: space-around;
+    height: 40vh;
+}
+
+.btn-ok{
+    width: 5vw;
+}
+
+
+/* responsividade modal */
+@media screen and (max-width: 1024px) {
+ .modal-dialog{
+    max-width: 90%;
+ }
+
+ .modal-content{
+    display: flex;
+    justify-content: space-evenly;
+    height: 35vh !important;
+ }
+
+ .modal-body{
+   max-height: 65%;
+ }
+
+ .modal-footer{
+    height: 25%;
+ }
+
+ .btn-ok{
+    width: 15vw;
+    
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+    .btn-ok{
+        width: 20vw;
+        
+    }
+}
