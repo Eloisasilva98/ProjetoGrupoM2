@@ -46,23 +46,23 @@
             <img id="imglogoSlogan" src="img/logoSlogan.png" alt="Slogan">
         </div>
         <div class="divformulario d-flex align-items-center justify-content-center">
-            <form id="formLogin" action="" class="d-flex flex-column justify-content-center align-items-center">
-                <div id="divHeaderFormLogin" class="d-flex justify-content-center">
+            <form id="formRecuperarSenha" action="" class="d-flex flex-column justify-content-center align-items-center">
+                <div id="divHeaderformRecuperarSenha" class="d-flex justify-content-center">
                     <span class="justify-self-start">Recuperar Senha</span>
                 </div>
-                <div id="divConteudoFormLogin" class="d-flex flex-column justify-content-evenly align-items-center">
+                <div id="divConteudoformRecuperarSenha" class="d-flex flex-column justify-content-evenly align-items-center">
                     <div class="divSpanRsenha d-flex flex-column">
                         <span>Informe seu e-mail cadastrado para que possamos te enviar o código de validação</span>
                     </div>
-                    <div class="inputLogin d-flex flex-column">
+                    <div class="inputEmail d-flex flex-column">
                         <label for="email">E-mail</label>
                         <input id="email" type="text">
                         <span id="apEmail"></span>
                     </div>
                 </div>
-                <div id="divfooterFormLogin" class="d-flex justify-content-end">
+                <div id="divfooterformRecuperarSenha" class="d-flex justify-content-end">
                     <div id="divBtnEntrar" class="d-flex align-items-center justify-content-between">
-                        <button type="button" class="btn btn-Entrar " data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+                        <button type="button" class="btn btn-Enviar " data-bs-toggle="modal" data-bs-target="#modalRecuperarSenha">Enviar</button>
                     </div>
                 </div>
             </form>
@@ -70,7 +70,7 @@
 
 
         <!-- Modal Recuperar Senha -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" >
+        <div class="modal fade" id="modalRecuperarSenha" tabindex="-1">
             <div class="modal-dialog">
               <div class="modal-content" id="conteudo-modal">
                 <div class="modal-header d-flex justify-content-center">
@@ -97,15 +97,15 @@
                 </div>
                 <div class="modal-footer d-flex align-items-end">
                   <button type="button" class="btn btn-cancelar" data-bs-dismiss="modal">Cacelar</button>
-                  <button type="button" class="btn btn-salvar" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal1">Salvar</button>
+                  <button type="button" class="btn btn-salvar" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalMensagem">Salvar</button>
                 </div>
               </div>
             </div>
           </div>
         
-          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="modalMensagem" tabindex="-1">
             <div class="modal-dialog">
-              <div class="modal-content" id="conteudo-modal1">
+              <div class="modal-content" id="conteudo-modalMensagem">
                 <div class="modal-body d-flex flex-column">
                     <span>Senha Alterada com sucesso!</span>
                 </div>
@@ -120,5 +120,6 @@
     <footer class="d-flex justify-content-center">Todos os direitos reservados © 2023 FRONTENDERS</footer>
 
     <script src="js/main.js"></script>
+    <script src="js/rsenha.js"></script>
 </body> 
 </html>

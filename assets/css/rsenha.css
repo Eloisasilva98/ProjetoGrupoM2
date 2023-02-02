@@ -5,13 +5,13 @@
     width: 50vw;
 }
 
-.inputLogin{
+.inputEmail{
     width: 80%;
     height: 35%;
     background-color: rgb(87, 20, 125);
 }
 
-.inputLogin label{
+.inputEmail label{
     font-size: 100%;
     font-weight: 900 !important;
     color: white;
@@ -23,19 +23,19 @@
     width: 80%;
 }
 
-#formLogin{
+#formRecuperarSenha{
     width: 35vw;
     height: 70vh;
     background-color: rgb(87, 20, 125);
     border-radius: 5vh;
 }
 
-#formLogin *{
+#formRecuperarSenha *{
     background-color: rgb(87, 20, 125);
 }
 
 
-.inputLogin input{
+.inputEmail input{
     text-align: center;
     font-size: 110%;
     border-radius: 5vh;
@@ -43,26 +43,26 @@
     background-color: white !important;
 }
 
-#divHeaderFormLogin, #divConteudoFormLogin, #divfooterFormLogin{
+#divHeaderformRecuperarSenha, #divConteudoformRecuperarSenha, #divfooterformRecuperarSenha{
     width: 90% ;
     background-color: rgba(86, 20, 125, 0);
 }
 
-#divHeaderFormLogin{
+#divHeaderformRecuperarSenha{
     height: 15%;
 }
 
-#divHeaderFormLogin span{
+#divHeaderformRecuperarSenha span{
     color: rgb(253, 194, 48);
     font-size: 200%;
     font-weight: 900;
 }
 
-#divConteudoFormLogin{
+#divConteudoformRecuperarSenha{
     height: 47vh;
 }
 
-#divfooterFormLogin{
+#divfooterformRecuperarSenha{
     width: 80% ;
     height: 10vh;
 }
@@ -71,7 +71,7 @@
     width: 25%;
 }
 
-.btn-Entrar{
+.btn-Enviar{
     font-weight: 900;
     color: rgb(23, 13, 48);
     width: 100%;
@@ -95,18 +95,18 @@
         width: 80%
     }
 
-    #formLogin{
+    #formRecuperarSenha{
         width: 95vw;
         height: 60vh;
         background-color: rgb(87, 20, 125);
         border-radius: 5vh;
     }
 
-    #divHeaderFormLogin span{
+    #divHeaderformRecuperarSenha span{
         font-size: 350%;
     }
 
-    #divConteudoFormLogin{
+    #divConteudoformRecuperarSenha{
         height: 60%;
     }
 
@@ -114,12 +114,12 @@
         font-size: 160%;
     }
 
-    .inputLogin{
+    .inputEmail{
         font-size: 120%;
         height: 35%;
     }
 
-    .btn-Entrar{
+    .btn-Enviar{
         font-size: 150%;
         width: 120px;
     }
@@ -128,11 +128,11 @@
 
 @media screen and (max-width: 767px) {
 
-    #divHeaderFormLogin span{
+    #divHeaderformRecuperarSenha span{
         font-size: 140%;
     }
 
-    #divConteudoFormLogin{
+    #divConteudoformRecuperarSenha{
         height: 60%;
     }
 
@@ -141,7 +141,7 @@
     }
 
     
-    .inputLogin{
+    .inputEmail{
         font-size: 100%;
         height: 35%;
     }
@@ -150,7 +150,7 @@
         width: 40%;
     }
 
-    .btn-Entrar{
+    .btn-Enviar{
         font-size: 80%;
         width: 100px;
     }
@@ -165,7 +165,7 @@
 
 
 
-#exampleModal, #exampleModal1{
+#modalRecuperarSenha, #modalMensagem{
     background-color:  rgba(21, 7, 45, 0.616);
 } 
 
@@ -204,11 +204,11 @@
     border: none;
 }
 
-#conteudo-modal1{
+#conteudo-modalMensagem{
     height: 25vh;
 }
 
-#conteudo-modal1 .modal-body{
+#conteudo-modalMensagem .modal-body{
     color: rgb(253, 194, 48);
     font-size: 3.5vh;
     height: 10px;
