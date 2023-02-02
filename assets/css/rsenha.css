@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
+/* Visualização desktop */
+
 .divlogoSlogan, .divformulario{
     height: 87.4vh;
     width: 50vw;
@@ -84,7 +86,7 @@
    font-size: 140%;
 }
 
-
+/* Visualização Tablet */
 @media screen and (max-width: 1023px) {
 
     .divlogoSlogan{
@@ -125,7 +127,7 @@
     }
 }
 
-
+/* Visualização celular */
 @media screen and (max-width: 767px) {
 
     #divHeaderformRecuperarSenha span{
@@ -272,7 +274,7 @@
     width: 15vw;
 }
 
-
+/* Visualização tablet */
 @media screen and (max-width: 1023px) {
     
     .modal-dialog{
@@ -325,7 +327,7 @@
 
 }
 
-
+/* Visualização celular */
 @media screen and (max-width: 767px) {
     
     .modal-dialog{
@@ -376,7 +378,7 @@
 
 
 /* /////////////////////////// modal 2 /////////////////////// */
-
+/* Visualização tablet */
 @media screen and (max-width: 1023px){
     .btn-ok{
         font-size: 100%;
