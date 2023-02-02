@@ -17,22 +17,21 @@
 
 
 .inputLogin label{
-    font-size: 200%;
     font-weight: 900 !important;
     color: white;
-    background-color: rgb(87, 20, 125);
+    background-color: rgba(86, 20, 125, 0);
 }
 
 .inputLogin input{
     text-align: center;
-    font-size: 200%;
+    font-size: 110%;
     border-radius: 5vh;
     height: 40%;
     background-color: white;
 }
 
 #imglogoSlogan{
-    width: 600px;
+    width: 80%;
 }
 
 #formLogin{
@@ -48,15 +47,15 @@
 }
 
 #divHeaderFormLogin{
-    height: 10vh;
-    background-color: rgb(87, 20, 125);
+    height: 15%;
+    background-color: rgba(86, 20, 125, 0);
     
 }
 
 #divHeaderFormLogin span{
     color: rgb(253, 194, 48);
-    background-color: rgb(87, 20, 125);
-    font-size: 350%;
+    background-color: rgba(86, 20, 125, 0);
+    font-size: 250%;
     font-weight: 900;
 }
 
@@ -75,21 +74,17 @@
 
 #divBtnEntrar a{
     color: rgb(79, 195, 195);
-    font-size: 110%;
     text-decoration: none;
     font-weight: 700;
 }
 
 .btn-Entrar{
-    font-size: 150%;
     font-weight: 900;
     color: rgb(23, 13, 48);
-    width: 150px;
-    height: 50px;
+    width: 90%;
 }
 
 #esqueceuSenha, #esqueceuSenha a {
-    font-size: 1.3vw;
     color: rgb(23, 13, 48);
     font-weight: 900;
     background-color: rgb(87, 20, 125);
@@ -102,34 +97,53 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
+
+    .divlogoSlogan{
+        display: none !important;
+    }
+
+    .divformulario{
+        width: 80%
+    }
+
+    #formLogin{
+        width: 95vw;
+        height: 60vh;
+        background-color: rgb(87, 20, 125);
+        border-radius: 5vh;
+    }
 
     #divConteudoFormLogin{
         height: 60%;
     }
 
     .inputLogin{
-        height: auto;
+        font-size: 120%;
+        height: 40%;
+    }
+
+    .inputSpan{
+        height: 30px;
     }
 
     #divHeaderFormLogin span{
-        font-size: 300%;
+        font-size: 350%;
     }
 
     .btn-Entrar{
-        font-size: 100%;
+        font-size: 150%;
         width: 120px;
     }
 }
 
 
-@media screen and (max-width: 768px) {
-    .divlogoSlogan{
-        display: none !important;
+@media screen and (max-width: 767px) {
+    .divformulario{
+        width: 85%
     }
-
     #formLogin{
-        width: 90vw;
+        width: 100vw;
         height: 60vh;
         background-color: rgb(87, 20, 125);
         border-radius: 5vh;
@@ -143,18 +157,22 @@
         font-size: 250%;
     }
     
-
-    .inputLogin label{
-        font-size: 110%;
+    .inputLogin{
+        font-size: 100%;
+        height: 35%;
     }
     
     .inputLogin input{
-        font-size: 150%;
+        height: 35%;
+    }
+
+    .inputSpan{
+        height: 30px;
     }
     
-    #esqueceuSenha, #esqueceuSenha a {
-        font-size: 2.7vw;
-    }
+    #esqueceuSenha{
+        font-size: 60%;
+    } 
 
     #divBtnEntrar a{
         color: rgb(79, 195, 195);
@@ -163,7 +181,6 @@
         font-weight: 700;
     }
     
-
     .btn-Entrar{
         font-size: 100%;
         width: 90px;
@@ -235,7 +252,7 @@
 
 
 /* responsividade modal */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
  .modal-dialog{
     max-width: 90%;
  }
@@ -261,7 +278,7 @@
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
     .btn-ok{
         width: 20vw;

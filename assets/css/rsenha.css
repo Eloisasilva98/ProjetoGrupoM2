@@ -5,16 +5,6 @@
     width: 50vw;
 }
 
-#imglogoSlogan{
-    width: 30vw;
-    height: 30vh;
-}
-
-.divlogoSlogan, .divformulario{
-    height: 87.4vh;
-    width: 50vw;
-}
-
 .inputLogin{
     width: 80%;
     height: 35%;
@@ -22,7 +12,7 @@
 }
 
 .inputLogin label{
-    font-size: 200%;
+    font-size: 100%;
     font-weight: 900 !important;
     color: white;
     background-color: rgb(87, 20, 125);
@@ -30,7 +20,7 @@
 
 
 #imglogoSlogan{
-    width: 600px;
+    width: 80%;
 }
 
 #formLogin{
@@ -47,24 +37,24 @@
 
 .inputLogin input{
     text-align: center;
-    font-size: 200%;
+    font-size: 110%;
     border-radius: 5vh;
-    height: 65px;
+    height: 40%;
     background-color: white !important;
 }
 
 #divHeaderFormLogin, #divConteudoFormLogin, #divfooterFormLogin{
     width: 90% ;
+    background-color: rgba(86, 20, 125, 0);
 }
 
 #divHeaderFormLogin{
-    height: 10vh;
+    height: 15%;
 }
 
 #divHeaderFormLogin span{
     color: rgb(253, 194, 48);
-    background-color: rgb(87, 20, 125);
-    font-size: 350%;
+    font-size: 200%;
     font-weight: 900;
 }
 
@@ -77,12 +67,14 @@
     height: 10vh;
 }
 
+#divBtnEntrar{
+    width: 25%;
+}
+
 .btn-Entrar{
-    font-size: 150%;
     font-weight: 900;
     color: rgb(23, 13, 48);
-    width: 150px;
-    height: 50px;
+    width: 100%;
 }
 
 .divSpanRsenha{
@@ -93,8 +85,83 @@
 }
 
 
+@media screen and (max-width: 1023px) {
+
+    .divlogoSlogan{
+        display: none !important;
+    }
+    
+    .divformulario{
+        width: 80%
+    }
+
+    #formLogin{
+        width: 95vw;
+        height: 60vh;
+        background-color: rgb(87, 20, 125);
+        border-radius: 5vh;
+    }
+
+    #divHeaderFormLogin span{
+        font-size: 350%;
+    }
+
+    #divConteudoFormLogin{
+        height: 60%;
+    }
+
+    .divSpanRsenha{
+        font-size: 160%;
+    }
+
+    .inputLogin{
+        font-size: 120%;
+        height: 35%;
+    }
+
+    .btn-Entrar{
+        font-size: 150%;
+        width: 120px;
+    }
+}
 
 
+@media screen and (max-width: 767px) {
+
+    #divHeaderFormLogin span{
+        font-size: 140%;
+    }
+
+    #divConteudoFormLogin{
+        height: 60%;
+    }
+
+    .divSpanRsenha{
+        font-size: 100%;
+    }
+
+    
+    .inputLogin{
+        font-size: 100%;
+        height: 35%;
+    }
+
+    #divBtnEntrar{
+        width: 40%;
+    }
+
+    .btn-Entrar{
+        font-size: 80%;
+        width: 100px;
+    }
+    
+}
+
+
+
+
+
+/* /////////////////////////// Modal 1 //////////////////////*/
 
 
 
@@ -103,8 +170,9 @@
 } 
 
 .modal-dialog{
+    margin: auto;
     background-color: rgba(255, 255, 255, 0);
-    margin-top: 20vh;
+    margin-top: 10vh;
     max-width: 40%;
     
 }
@@ -138,7 +206,6 @@
 
 #conteudo-modal1{
     height: 25vh;
-    margin-top: 250px;
 }
 
 #conteudo-modal1 .modal-body{
@@ -149,9 +216,7 @@
 }
 
 .btn-cancelar{
-    font-size: 2vh;
-    width: 5vw;
-    height: 4vh;
+    font-size: 80%;
     background-color: rgb(179, 179, 179) !important;
 }
 
@@ -160,9 +225,7 @@
 }
 
 .btn-salvar{
-    font-size: 2vh;
-    width: 6vw;
-    height: 5vh;
+    height: 40px;
 }
 
 .btn-salvar:hover{
@@ -170,12 +233,11 @@
 }
 
 .btn-ok{
-    width: 5vw;
+    width: 130%;
 }
 
 .modal-body{
     align-items: center;
-    justify-content: space-around;
     height: 40vh;
 }
 
@@ -194,9 +256,9 @@
 }
 
 .divSenha{
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 25vw;
-    height: 15vh;
+    height: 30vh;
 }
 
 .divSenha input{
@@ -210,3 +272,113 @@
     width: 15vw;
 }
 
+
+@media screen and (max-width: 1023px) {
+    
+    .modal-dialog{
+        max-width: 80%;
+        
+    }
+
+    .modal-content{
+      width: 100%;
+    }
+
+    .modal-header h1 {
+        font-size: 350% !important;
+    }
+
+    .divCodigo, .divSenha{
+        width: 90%;
+        
+    }
+
+    #codigoValidacao{
+        font-size: 150%;
+        width: 50%;
+    }
+
+    .divInputSenha{
+       
+        width: 100%;
+    }
+    
+    .inputSenha{
+        font-size: 130% !important;
+        width: 100% !important;
+    }
+
+    .btn-cancelar{
+        font-size: 100%;
+        background-color: rgb(179, 179, 179) !important;
+    }
+    
+    .btn-cancelar:hover{
+        background-color: rgb(231, 231, 231) !important;
+    }
+    
+    .btn-salvar{
+        font-size: 120%;
+        height: 50px;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .modal-dialog{
+        
+        max-width: 95%;
+        height: 60vh !important;
+    }
+
+    .modal-header h1 {
+        font-size: 160% !important;
+    }
+
+    .modal-body{
+        width: 90% !important;
+    }
+
+    .divCodigo, .divSenha{
+        font-size: 80% !important;
+        width: 100%;
+        
+    }
+
+    #codigoValidacao{
+        font-size: 130%;
+    }
+
+    .inputSenha{
+        font-size: 100% !important;
+        width: 100% !important;
+    }
+
+    .btn-cancelar{
+        font-size: 70%;
+        background-color: rgb(179, 179, 179) !important;
+    }
+    
+    .btn-cancelar:hover{
+        background-color: rgb(231, 231, 231) !important;
+    }
+    
+    .btn-salvar{
+        font-size: 90%;
+        height: 40px;
+    }
+    
+
+}
+
+
+/* /////////////////////////// modal 2 /////////////////////// */
+
+@media screen and (max-width: 1023px){
+    .btn-ok{
+        font-size: 100%;
+    }
+}
