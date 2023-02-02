@@ -200,7 +200,7 @@ $('form').on('submit', (e) => {
 function validaForm() {
 if (nomeok && emailok && documentook && senhaok && csenhaok && documentook && cepok){
     $('#spanModal').text('Cadastro realizado com sucesso! ')
-    $('#linkBtnModal').attr('href', '../index.html')
+    $('#linkBtnModal').attr('href', 'login.html')
 }
 else {
     $('#spanModal').text('Um ou mais campos não foram preenchidos corretamente')
