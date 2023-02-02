@@ -18,9 +18,10 @@ $('.btn-Enviar').on('click', () => {
 })
 
 
-
+// Retirando autocompletar dos imputs
 $('input').attr('autocomplete', 'off')
 
+// Validação campo email
 $('#email').on('input', () => {
     const email = $('#email').val().trim()
     const regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i
@@ -61,7 +62,7 @@ $('#email').on('input', () => {
     }
 })
 
-
+// Validação do codigo validador
 $('#codigoValidacao').on('input', () =>{
     if($('#codigoValidacao').val().length < 5){
         $('#apCodigo').text('* Código inválido') 
@@ -131,9 +132,10 @@ $('#senha').on('input', () => {
         }
         
  })
-
+// Atribuindo a função de limpeza dos campos ao botão cancelar 
  $('.btn-cancelar').on('click', () => limpaCampos())
 
+//  Função responsavel por limpar todos os campos do pop-Up de alteração de senha 
 function limpaCampos(){
     $('#codigoValidacao').val('')
     $('#apCodigo').text('') 
@@ -146,6 +148,7 @@ function limpaCampos(){
     confSenhaok = false
  }
 
+//  Atribuindo comportamento do botão de salvar do pop-Up de alteraçã de senha
  $('.btn-salvar').on('click',() =>{
     if (codigook && novaSenhaok && confSenhaok){
         $('.btn-salvar').attr('data-bs-target' , '#modalMensagem')

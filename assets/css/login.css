@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
+/* Visualização para desktop */
 .divlogoSlogan, .divformulario{
     height: 87.4vh;
     width: 50vw;
@@ -96,7 +97,7 @@
     
 }
 
-
+/* Visualização para Tablet */
 @media screen and (max-width: 1023px) {
 
     .divlogoSlogan{
@@ -137,7 +138,7 @@
     }
 }
 
-
+/* Visualização para celular */
 @media screen and (max-width: 767px) {
     .divformulario{
         width: 85%

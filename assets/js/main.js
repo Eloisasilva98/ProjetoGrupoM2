@@ -1,5 +1,8 @@
 let menuMobileOff = true
 
+
+// Script responsável pelo comportamnto do menu em vizualização mobile
+
 $("#headerMobile").css({
     'height': '0vh',
     'display': 'none',
