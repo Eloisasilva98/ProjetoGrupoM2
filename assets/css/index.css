@@ -180,6 +180,8 @@ p{
     /* Define o gap (espaçamento) entre os elementos do grid. */
     padding: 20px 0px;
     /* border: 1px solid black; */
+    font-size: 30px;
+    font-weight: 600;
   
 }
 #titulo2{
@@ -187,6 +189,8 @@ p{
     justify-content: center;
     color:rgb(253, 194, 48) !important ;
     margin-top: 90px;
+    font-weight: 900;
+    font-size: 25px;
 }
 
 
