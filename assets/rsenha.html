@@ -56,13 +56,13 @@
                     </div>
                     <div class="inputEmail d-flex flex-column">
                         <label for="email">E-mail</label>
-                        <input id="email" type="text">
+                        <input id="email" type="text" >
                         <span id="apEmail"></span>
                     </div>
                 </div>
                 <div id="divfooterformRecuperarSenha" class="d-flex justify-content-end">
                     <div id="divBtnEntrar" class="d-flex align-items-center justify-content-between">
-                        <button type="button" class="btn btn-Enviar " data-bs-toggle="modal" data-bs-target="#modalRecuperarSenha">Enviar</button>
+                        <button type="submit" class="btn btn-Enviar " data-bs-toggle="modal">Enviar</button>
                     </div>
                 </div>
             </form>
@@ -79,25 +79,25 @@
                 <div class="modal-body d-flex flex-column">
                     <div class="divCodigo d-flex flex-column ">
                         <label for="codigoValidacao">Código de Validação</label>
-                        <input id='codigoValidacao' type="text" placeholder="Ex: 12345">
+                        <input id='codigoValidacao' type="text" pattern="\d*" maxlength="5" placeholder="Ex: 12H4A">
                         <span id="apCodigo"></span>
                     </div>
                     <div class="divSenha d-flex flex-column">
                         <div class="divInputSenha d-flex flex-column">
                             <label for="inputSenha">Nova Senha</label>
-                            <input class='inputSenha' type="password" placeholder="Ex: Senha@123">
+                            <input id="senha" class='inputSenha' type="password" placeholder="Ex: Senha@123">
                             <span id="apSenha"></span>
                         </div>
                         <div  class="divInputSenha d-flex flex-column">
                             <label for="inputSenha">Confirmação de Senha</label>
-                            <input class='inputSenha' type="password" placeholder="Ex: Senha@123">
+                            <input id="cSenha" class='inputSenha' type="password" placeholder="Ex: Senha@123">
                             <span id="apCSenha"></span>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer d-flex align-items-end">
                   <button type="button" class="btn btn-cancelar" data-bs-dismiss="modal">Cacelar</button>
-                  <button type="button" class="btn btn-salvar" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalMensagem">Salvar</button>
+                  <button type="button" class="btn btn-salvar" data-bs-toggle="modal" data-bs-dismiss="modal"  data-bs-target="#modalMensagem2"  >Salvar</button>
                 </div>
               </div>
             </div>
@@ -107,10 +107,23 @@
             <div class="modal-dialog">
               <div class="modal-content" id="conteudo-modalMensagem">
                 <div class="modal-body d-flex flex-column">
-                    <span>Senha Alterada com sucesso!</span>
+                    <span id="spanModalMensagem"></span>
                 </div>
                 <div class="modal-footer">
-                  <a href="login.html"><button type="button" class="btn btn-ok" data-bs-dismiss="modal">OK</button></a>
+                  <a id="linkBtnOk"><button type="button" data-bs-dismiss="modal" class="btn bn-ok">OK</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modalMensagem2" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content" id="conteudo-modalMensagem">
+                <div class="modal-body d-flex flex-column">
+                    <span id="spanModalMensagem2"></span>
+                </div>
+                <div class="modal-footer">
+                  <a ><button type="button" class="btn bn-ok" data-bs-toggle="modal" data-bs-target='#modalRecuperarSenha'>OK</button></a>
                 </div>
               </div>
             </div>
