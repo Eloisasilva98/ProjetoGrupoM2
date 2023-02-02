@@ -42,7 +42,7 @@ $('#nomeCompleto').on('input',()=> {
        
     }
 
-    else if (nome <= 3) {
+    else if (nome.length <= 3) {
         $('#nomeAp').text('Por Favor Coloque Seu Nome Completo') 
         $('#nomeAp').css({ 'color': 'red' })
         nomeok = false
